@@ -1,0 +1,171 @@
+@font-face {
+  font-family: Greek;
+  src: url('../static/Greekish-aP6g.ttf');
+}
+
+
+
+*{
+  background-color: black;
+}
+
+
+.title{
+  font-size: 5em;
+  font-family: Greek;
+  // text-align: center;
+  position: absolute;
+  color: rgba(255,255,255,1);
+  // pointer-events: none;
+  top: 5%;
+  left: 5%;
+  // justify-content: center;
+  width: 100%;
+  height: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#devil{
+  font-size: 34em;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  z-index: -1;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  visibility: hidden;
+
+
+}
+
+.loading-bar
+{
+    color: white;
+    font-size: 10em;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.5s;
+
+
+}
+
+.loading-bar.ended
+{
+    transform: scaleX(0);
+    transform-origin: 100% 0;
+    transition: transform 1.5s ease-in-out;
+}
+
+.loading-bar-text
+{
+    pointer-events: none;
+    font-family: Greek;
+    color: white;
+    font-size: 10em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    // transition: transform 1.5s ease-in-out;
+
+
+
+
+}
+
+
+
+
+
+
+.fade-out {
+
+  animation: fadeOut ease 4s  forwards;;
+  -webkit-animation: fadeOut ease 4s  forwards;;
+  -moz-animation: fadeOut ease 4s  forwards;;
+  -o-animation: fadeOut ease 4s  forwards;;
+  -ms-animation: fadeOut ease 4s  forwards;;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+
+	}
+
+	50% {
+		transform: scale(1);
+
+	}
+
+	100% {
+		transform: scale(0.95);
+
+	}
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
