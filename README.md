@@ -1,4 +1,4 @@
-# birbStained
+# birbAncient
 
 For @sableRaph's weekly Creative Coding Challenge. The Challenge topic was 'Ancient'.
 
@@ -29,7 +29,7 @@ I made a little model in blender and stuck some shaders on it. I'm nothing if no
 - I'm intending to fix that.
 - It's really unlikely I have fixed that by now.
 - If anyone knows about gltf animations and threejs plz help me.
-- I mean I could just dig into the code but I confuse very easily. 
+- I mean I could just dig into the code but I confuse very easily.
 
 
 # Shader bit.
